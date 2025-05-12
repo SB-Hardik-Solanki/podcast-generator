@@ -11,8 +11,8 @@ imputs:
   email:
     description: The commiter's email address
     required: true
-    default: "${GITHUB_ACTOR}@localhost"
+    default: ${GITHUB_ACTOR}@localhost
   name:
     description: The commiter's name
     required: true
-    default: "${GITHUB_ACTOR}"
+    default: ${GITHUB_ACTOR}

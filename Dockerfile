@@ -8,8 +8,9 @@ RUN apt-get update && apt-get install -y \
 
 RUN python3 -m venv ./podcast-generator 
 
-RUN source ./podcast-generator/bin/activate \
-    pip3 install PyYAML
+RUN source ./podcast-generator/bin/activate
+
+RUN pip3 install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 

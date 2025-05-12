@@ -45,5 +45,5 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Run Feed Generator
-        uses: planetoftheweb/podcast-generator@main
+        uses: SB-Hardik-Solanki/podcast-generator@main
 ```

@@ -2,13 +2,13 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
     python3.10 \
-    python3-pip \
     python3-venv \
+    python3-pip \
     git
 
 RUN python3 -m venv ./podcast-generator
 
-RUN ./podcast-generator/bin/python3 -m pip3 install PyYAML
+RUN ./podcast-generator/bin/pip3 install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
